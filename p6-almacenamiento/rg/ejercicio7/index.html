@@ -1,0 +1,1522 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://www.grupalesbdc.ga/p6-almacenamiento/rg/ejercicio7/" rel="canonical"/>
+<link href="../ejercicio6/" rel="prev"/>
+<link href="../caso-practico-parte-a/" rel="next"/>
+<link href="../../../img/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.15" name="generator"/>
+<title>Ejercicio 7 - Grupales de BD Grupo C 22/23</title>
+<link href="../../../assets/stylesheets/main.113286f1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/asciinema-player.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="red" data-md-color-primary="red" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#ejercicio-7">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Grupales de BD Grupo C 22/23" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Grupales de BD Grupo C 22/23">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Grupales de BD Grupo C 22/23
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Ejercicio 7
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Cambiar a tema oscuro" class="md-option" data-md-color-accent="red" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Cambiar a tema oscuro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Cambiar a tema normal" class="md-option" data-md-color-accent="red" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Cambiar a tema normal">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/adriasir123/grupalesbdc" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.846 1.846 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.848 1.848 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"></path></svg>
+</div>
+<div class="md-source__repository">
+    Repositorio
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../p1-servidores-clientes/intro/">
+        Práctica 1 servidores y clientes
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../p4-grupal-plsql/intro/">
+        Práctica 4 grupal de PL/SQL
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../p5-usuarios/intro/">
+        Práctica 5 usuarios
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../intro/">
+        Práctica 6 almacenamiento
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Grupales de BD Grupo C 22/23" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Grupales de BD Grupo C 22/23">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4Z"></path></svg>
+</a>
+    Grupales de BD Grupo C 22/23
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/adriasir123/grupalesbdc" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.846 1.846 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.848 1.848 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"></path></svg>
+</div>
+<div class="md-source__repository">
+    Repositorio
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Práctica 1 servidores y clientes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Práctica 1 servidores y clientes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/intro/">
+        Introducción
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Responsabilidad individual
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad individual
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/ri/alumno1/">
+        Alumno 1: Adrián
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/ri/alumno2/">
+        Alumno 2: José Juan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/ri/alumno3/">
+        Alumno 3: Arantxa
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/ri/alumno4/">
+        Alumno 4: Antonio
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          Responsabilidad grupal
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad grupal
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/rg/sql-developer/">
+        SQL Developer
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/rg/herramienta-postgresql/">
+        phpPgAdmin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/rg/phpmyadmin/">
+        phpMyAdmin
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/rg/herramienta-mongodb/">
+        MongoDB-PHP-GUI
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p1-servidores-clientes/rg/oracle-enterprise-manager/">
+        Oracle Enterprise Manager
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Práctica 4 grupal de PL/SQL
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Práctica 4 grupal de PL/SQL
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/intro/">
+        Introducción
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/pasos-previos/">
+        Pasos previos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio1/">
+        Ejercicio 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio2/">
+        Ejercicio 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio3/">
+        Ejercicio 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio3-postgres/">
+        Ejercicio 3 PostgreSQL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio4/">
+        Ejercicio 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio5/">
+        Ejercicio 5
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio5-postgres/">
+        Ejercicio 5 PostgreSQL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio6/">
+        Ejercicio 6
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio7/">
+        Ejercicio 7
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p4-grupal-plsql/ejercicio8/">
+        Ejercicio 8
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Práctica 5 usuarios
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Práctica 5 usuarios
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/intro/">
+        Introducción
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          Responsabilidad individual
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad individual
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/ri/alumno1/">
+        Alumno 1: Adrián
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/ri/alumno2/">
+        Alumno 2: José Juan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/ri/alumno3/">
+        Alumno 3: Arantxa
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/ri/alumno4/">
+        Alumno 4: Antonio
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          Responsabilidad grupal
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad grupal
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+          Caso práctico 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_3_1">
+<span class="md-nav__icon md-icon"></span>
+          Caso práctico 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej1/">
+        Ejercicio 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej2/">
+        Ejercicio 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej3/">
+        Ejercicio 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej4-oracle/">
+        Ejercicio 4 Oracle
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej4-postgres/">
+        Ejercicio 4 PostgreSQL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-1-ej5/">
+        Ejercicio 5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+          Caso práctico 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_4_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Caso práctico 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-2-ej1/">
+        Ejercicio 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-2-ej2/">
+        Ejercicio 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-2-ej3/">
+        Ejercicio 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/caso-practico-2-ej4/">
+        Ejercicio 4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../p5-usuarios/rg/ejercicio-grupal-3/">
+        Ejercicio grupal 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Práctica 6 almacenamiento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Práctica 6 almacenamiento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intro/">
+        Introducción
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          Responsabilidad individual
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad individual
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ri/alumno1/">
+        Alumno 1: Antonio
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ri/alumno2/">
+        Alumno 2: José Juan
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ri/alumno3/">
+        Alumno 3: Arantxa
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ri/alumno4/">
+        Alumno 4: Adrián
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+          Responsabilidad grupal
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_5_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Responsabilidad grupal
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio1/">
+        Ejercicio 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio2/">
+        Ejercicio 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio3/">
+        Ejercicio 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio4/">
+        Ejercicio 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio5/">
+        Ejercicio 5
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ejercicio6/">
+        Ejercicio 6
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Ejercicio 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Ejercicio 7
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explicad-en-que-consiste-el-sharding-en-mongodb-intentad-montarlo">
+    Explicad en qué consiste el sharding en MongoDB. Intentad montarlo
+  </a>
+<nav aria-label="Explicad en qué consiste el sharding en MongoDB. Intentad montarlo" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definicion-y-ventajas-del-sharding">
+    Definición y ventajas del Sharding
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#como-implementar-el-sharding-en-mongodb">
+    Cómo implementar el Sharding en MongoDB
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ejemplo-de-implementacion">
+    Ejemplo de implementación
+  </a>
+<nav aria-label="Ejemplo de implementación" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sharded-database">
+    Sharded database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-de-datos-con-uno-de-los-campos-de-la-coleccion-fragmentado">
+    Base de datos con uno de los campos de la colección fragmentado
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3_8" id="__nav_5_3_8_label" tabindex="0">
+          Caso práctico
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_3_8_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_3_8">
+<span class="md-nav__icon md-icon"></span>
+          Caso práctico
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../caso-practico-parte-a/">
+        Parte A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../caso-practico-parte-b/">
+        Parte B
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../caso-practico-parte-c/">
+        Parte C
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../caso-practico-parte-d/">
+        Parte D
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../caso-practico-parte-f/">
+        Parte F
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../video-grupal/">
+        Vídeo grupal
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explicad-en-que-consiste-el-sharding-en-mongodb-intentad-montarlo">
+    Explicad en qué consiste el sharding en MongoDB. Intentad montarlo
+  </a>
+<nav aria-label="Explicad en qué consiste el sharding en MongoDB. Intentad montarlo" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definicion-y-ventajas-del-sharding">
+    Definición y ventajas del Sharding
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#como-implementar-el-sharding-en-mongodb">
+    Cómo implementar el Sharding en MongoDB
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ejemplo-de-implementacion">
+    Ejemplo de implementación
+  </a>
+<nav aria-label="Ejemplo de implementación" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sharded-database">
+    Sharded database
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-de-datos-con-uno-de-los-campos-de-la-coleccion-fragmentado">
+    Base de datos con uno de los campos de la colección fragmentado
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="ejercicio-7">Ejercicio 7</h1>
+<h2 id="explicad-en-que-consiste-el-sharding-en-mongodb-intentad-montarlo">Explicad en qué consiste el sharding en MongoDB. Intentad montarlo</h2>
+<h3 id="definicion-y-ventajas-del-sharding">Definición y ventajas del Sharding</h3>
+<p>El sharding en MongoDB es un método para distribuir la carga de datos y la capacidad de procesamiento en múltiples nodos. El sharding es útil cuando una sola instancia de MongoDB no puede manejar altas cargas de trabajo, ya que con este método se puede escalar horizontalmente.</p>
+<p>Dicho de otra forma, el Sharding ofrece que la capacidad de procesamiento y almacenamiento de una aplicación funcione manteniendo un alto nivel de rendimiento y disponibilidad. Esto lo hace distribuyendo la carga de datos y la capacidad de procesamiento a través de múltiples máquinas.</p>
+<p>En MongoDB, el Sharding se basa en el concepto de fragmentación de los datos en "particiones" o fragmentos más pequeños, conocidos como chunks. Un fragmento o chunk es un conjunto de réplicas que contiene un subconjunto de los datos del clúster.</p>
+<p>Cada chunk es almacenado y gestionado por un servidor distinto en la infraestructura de Sharding. La fragmentación se basa en una clave de fragmento, que se utiliza para determinar en qué servidor se almacenará cada chunk, de acuerdo con los rangos de fragmentos y la cantidad de fragmentos.</p>
+<p>La clave de fragmento tiene un impacto directo en el rendimiento del clúster y debe elegirse con cuidado. Una clave de fragmento subóptima puede provocar problemas de rendimiento o de escalado debido a una distribución desigual de los fragmentos.</p>
+<p>Existen dos estrategias de fragmentación para distribuir datos entre clústeres fragmentados:</p>
+<ul>
+<li>Fragmentación por rangos <strong>(Ranged Sharding)</strong>: divide los datos en rangos en función de los valores de la clave de fragmentación. Luego, a cada fragmento se le asigna un rango basado en los valores de la clave de fragmento. Es más probable que un rango de claves de fragmentos cuyos valores sean "cercanos" residan en el mismo fragmento. Esto permite operaciones dirigidas, ya que mongos puede enrutar las operaciones solo a los fragmentos que contienen los datos requeridos.</li>
+<li>Fragmentación hash <strong>(Hashed Sharding)</strong>: implica calcular un hash del valor del campo de la clave de fragmento. Luego, a cada fragmento se le asigna un rango basado en los valores de clave de fragmento con hash. Si bien un rango de claves de fragmento puede estar "cercano", es poco probable que sus valores hash estén en el mismo fragmento. La distribución de datos basada en valores hash facilita una distribución de datos más uniforme, especialmente en conjuntos de datos donde la clave de fragmento cambia de forma monótona. Sin embargo, la fragmentación hash no proporciona operaciones eficientes basadas en rangos.</li>
+</ul>
+<p><strong>Ventajas del Sharding:</strong></p>
+<ul>
+<li>Mayor rendimiento de lectura/escritura.</li>
+<li>Mayor capacidad de almacenamiento.</li>
+<li>Alta disponibilidad mediante la distribución geográfica de los datos.</li>
+</ul>
+<h3 id="como-implementar-el-sharding-en-mongodb">Cómo implementar el Sharding en MongoDB</h3>
+<p>Para implementar una configuración de sharding en MongoDB, debemos tener tres componentes clave:</p>
+<ul>
+<li>
+<p>Un servior <strong>mongos</strong>: estos actúan como intermediarios entre las aplicaciones cliente y los servidores de datos. Los servidores mongos gestionan la distribución de los chunks de datos entre los servidores de datos y redirigen las consultas a los servidores apropiados.</p>
+</li>
+<li>
+<p>Servidores de datos fragmentados (<strong>shards</strong>): estos son servidores que almacenan los chunks de datos y ejecutan las operaciones CRUD.</p>
+</li>
+<li>
+<p>Al menos un <strong>servidor de configuración</strong> de fragmentación: que mantiene información sobre la configuración de sharding, incluyendo la asignación de chunks a servidores de datos.</p>
+</li>
+</ul>
+<p>Una vez realizada la configuración de los nodos, se debe fragmentar una base de datos o colección específica. Esto se hace asignando una clave de sharding a la colección, que se utiliza para fragmentar los datos en chunks. Para especificar la clave de sharding se utiliza la siguiente sintaxis en la línea de comandos:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>sh.enableSharding<span class="o">(</span><span class="s2">"database_name"</span><span class="o">)</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>db.collection_name.ensureIndex<span class="o">(</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>shard_key:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">)</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>sh.shardCollection<span class="o">(</span><span class="s2">"database_name.collection_name"</span>,<span class="w"> </span><span class="o">{</span><span class="w"> </span>shard_key:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">)</span>
+</code></pre></div>
+<p><strong>Shard_key</strong> es la clave de sharding que se utilizará para fragmentar los datos.</p>
+<p>Una vez shardeada la colección, los chunks de datos se distribuirán automáticamente entre los servidores de datos y las consultas se redirigirán a los servidores apropiados utilizando los servidores mongos.</p>
+<p>Veremos más detenidamente cuáles son los pasos a seguir en el siguiente ejemplo de implementación.</p>
+<h3 id="ejemplo-de-implementacion">Ejemplo de implementación</h3>
+<p>En nuestro caso vamos a crear un cluster shardeado (fragmentado) usando Docker-Compose, por lo que el primer paso será instalar el paquete.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker-compose
+</code></pre></div>
+<p>Comenzamos el servicio docker:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+</code></pre></div>
+<p>Vamos a descargar los ficheros del siguiente repositorio: <a href="https://github.com/kayne87/mongodb-sharding-docker">MongoDB Sharding with Docker</a></p>
+<p>Entramos en el repositorio descargado. Si queremos modificar las instancias que se crearán, nombres o eliminar/añadir algún servidor shard o de configuración, podemos ver el fichero docker-compose.yml del repositorio. Para nuestro caso no voy a modificar nada, ya que esto es un ejemplo de creación de configuración de sharding. Así pues, iniciamos docker-compose.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>Descargas/mongodb-sharding-docker-master
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>sudo<span class="w"> </span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</code></pre></div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/img/capturas-arantxa/99.png"><img alt="docker-compose" src="/img/capturas-arantxa/99.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/img/capturas-arantxa/100.png"><img alt="docker-compose" src="/img/capturas-arantxa/100.png"/></a></p>
+<p>Entramos en el servidor de configuración <strong>mongocfg1</strong> e iniciamos el Replica Set (conjunto de réplicas) mediante <code>rs.initiate()</code>. Este comando iniciará la replicación con la configuración predeterminada inferida por el servidor MongoDB, así que si quiero configurar un conjunto de réplicas que consta de varios servidores independientes, tengo que poner algunos datos: como el nombre del Replica Set, el valor configsvr en true y la información de los hosts creados.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mongocfg1<span class="w"> </span>/bin/bash
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>mongosh
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>rs.initiate<span class="o">({</span>_id:<span class="w"> </span><span class="s2">"cfg"</span>,<span class="w"> </span>configsvr:<span class="w"> </span>true,<span class="w"> </span>members:<span class="w"> </span><span class="o">[{</span>_id:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>host:<span class="w"> </span><span class="s2">"mongocfg1"</span><span class="o">}</span>,<span class="o">{</span>_id:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>host:<span class="w"> </span><span class="s2">"mongocfg2"</span><span class="o">}</span>,<span class="w"> </span><span class="o">{</span>_id:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongocfg3"</span><span class="o">}]})</span>
+</code></pre></div>
+<p>Comprobamos el resultado con <code>rs.status()</code>. Debería salirnos algo parecido a lo siguiente:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>cfg<span class="w"> </span><span class="o">[</span>direct:<span class="w"> </span>primary<span class="o">]</span><span class="w"> </span>test&gt;<span class="w"> </span>rs.status<span class="o">()</span>
+<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="o">{</span>
+<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">  </span>set:<span class="w"> </span><span class="s1">'cfg'</span>,
+<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span>date:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.779Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span>myState:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">  </span>term:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">  </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">  </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">  </span>configsvr:<span class="w"> </span>true,
+<a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">  </span>heartbeatIntervalMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"2000"</span><span class="o">)</span>,
+<a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">  </span>majorityVoteCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-12" id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">  </span>writeMajorityCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-13" id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">  </span>votingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-5-14" id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">  </span>writableVotingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-5-15" id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">  </span>optimes:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-5-16" id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">    </span>lastCommittedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-17" id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="w">    </span>lastCommittedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-18" id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="w">    </span>readConcernMajorityOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-19" id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="w">    </span>appliedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-20" id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="w">    </span>durableOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-21" id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="w">    </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-22" id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="w">    </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>
+<a href="#__codelineno-5-23" id="__codelineno-5-23" name="__codelineno-5-23"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-5-24" id="__codelineno-5-24" name="__codelineno-5-24"></a><span class="w">  </span>lastStableRecoveryTimestamp:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379464</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-5-25" id="__codelineno-5-25" name="__codelineno-5-25"></a><span class="w">  </span>electionCandidateMetrics:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-5-26" id="__codelineno-5-26" name="__codelineno-5-26"></a><span class="w">    </span>lastElectionReason:<span class="w"> </span><span class="s1">'electionTimeout'</span>,
+<a href="#__codelineno-5-27" id="__codelineno-5-27" name="__codelineno-5-27"></a><span class="w">    </span>lastElectionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:57:54.926Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-28" id="__codelineno-5-28" name="__codelineno-5-28"></a><span class="w">    </span>electionTerm:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-5-29" id="__codelineno-5-29" name="__codelineno-5-29"></a><span class="w">    </span>lastCommittedOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379464</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-30" id="__codelineno-5-30" name="__codelineno-5-30"></a><span class="w">    </span>lastSeenOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379464</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-31" id="__codelineno-5-31" name="__codelineno-5-31"></a><span class="w">    </span>numVotesNeeded:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-32" id="__codelineno-5-32" name="__codelineno-5-32"></a><span class="w">    </span>priorityAtElection:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-33" id="__codelineno-5-33" name="__codelineno-5-33"></a><span class="w">    </span>electionTimeoutMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"10000"</span><span class="o">)</span>,
+<a href="#__codelineno-5-34" id="__codelineno-5-34" name="__codelineno-5-34"></a><span class="w">    </span>numCatchUpOps:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-5-35" id="__codelineno-5-35" name="__codelineno-5-35"></a><span class="w">    </span>newTermStartDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:57:55.024Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-36" id="__codelineno-5-36" name="__codelineno-5-36"></a><span class="w">    </span>wMajorityWriteAvailabilityDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:57:56.248Z"</span><span class="o">)</span>
+<a href="#__codelineno-5-37" id="__codelineno-5-37" name="__codelineno-5-37"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-5-38" id="__codelineno-5-38" name="__codelineno-5-38"></a><span class="w">  </span>members:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-5-39" id="__codelineno-5-39" name="__codelineno-5-39"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-5-40" id="__codelineno-5-40" name="__codelineno-5-40"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-5-41" id="__codelineno-5-41" name="__codelineno-5-41"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongocfg1:27017'</span>,
+<a href="#__codelineno-5-42" id="__codelineno-5-42" name="__codelineno-5-42"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-43" id="__codelineno-5-43" name="__codelineno-5-43"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-44" id="__codelineno-5-44" name="__codelineno-5-44"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'PRIMARY'</span>,
+<a href="#__codelineno-5-45" id="__codelineno-5-45" name="__codelineno-5-45"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">566</span>,
+<a href="#__codelineno-5-46" id="__codelineno-5-46" name="__codelineno-5-46"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-47" id="__codelineno-5-47" name="__codelineno-5-47"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-48" id="__codelineno-5-48" name="__codelineno-5-48"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-49" id="__codelineno-5-49" name="__codelineno-5-49"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-50" id="__codelineno-5-50" name="__codelineno-5-50"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-51" id="__codelineno-5-51" name="__codelineno-5-51"></a><span class="w">      </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-5-52" id="__codelineno-5-52" name="__codelineno-5-52"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-53" id="__codelineno-5-53" name="__codelineno-5-53"></a><span class="w">      </span>electionTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379474</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-5-54" id="__codelineno-5-54" name="__codelineno-5-54"></a><span class="w">      </span>electionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:57:54.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-55" id="__codelineno-5-55" name="__codelineno-5-55"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-56" id="__codelineno-5-56" name="__codelineno-5-56"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-57" id="__codelineno-5-57" name="__codelineno-5-57"></a><span class="w">      </span>self:<span class="w"> </span>true,
+<a href="#__codelineno-5-58" id="__codelineno-5-58" name="__codelineno-5-58"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>
+<a href="#__codelineno-5-59" id="__codelineno-5-59" name="__codelineno-5-59"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-5-60" id="__codelineno-5-60" name="__codelineno-5-60"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-5-61" id="__codelineno-5-61" name="__codelineno-5-61"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-62" id="__codelineno-5-62" name="__codelineno-5-62"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongocfg2:27017'</span>,
+<a href="#__codelineno-5-63" id="__codelineno-5-63" name="__codelineno-5-63"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-64" id="__codelineno-5-64" name="__codelineno-5-64"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-65" id="__codelineno-5-65" name="__codelineno-5-65"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-5-66" id="__codelineno-5-66" name="__codelineno-5-66"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">27</span>,
+<a href="#__codelineno-5-67" id="__codelineno-5-67" name="__codelineno-5-67"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379490</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-68" id="__codelineno-5-68" name="__codelineno-5-68"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379490</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-69" id="__codelineno-5-69" name="__codelineno-5-69"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-70" id="__codelineno-5-70" name="__codelineno-5-70"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-71" id="__codelineno-5-71" name="__codelineno-5-71"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-72" id="__codelineno-5-72" name="__codelineno-5-72"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-73" id="__codelineno-5-73" name="__codelineno-5-73"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.988Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-74" id="__codelineno-5-74" name="__codelineno-5-74"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.495Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-75" id="__codelineno-5-75" name="__codelineno-5-75"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-5-76" id="__codelineno-5-76" name="__codelineno-5-76"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-77" id="__codelineno-5-77" name="__codelineno-5-77"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">'mongocfg1:27017'</span>,
+<a href="#__codelineno-5-78" id="__codelineno-5-78" name="__codelineno-5-78"></a><span class="w">      </span>syncSourceId:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-5-79" id="__codelineno-5-79" name="__codelineno-5-79"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-80" id="__codelineno-5-80" name="__codelineno-5-80"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-81" id="__codelineno-5-81" name="__codelineno-5-81"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-5-82" id="__codelineno-5-82" name="__codelineno-5-82"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-5-83" id="__codelineno-5-83" name="__codelineno-5-83"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-5-84" id="__codelineno-5-84" name="__codelineno-5-84"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-85" id="__codelineno-5-85" name="__codelineno-5-85"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongocfg3:27017'</span>,
+<a href="#__codelineno-5-86" id="__codelineno-5-86" name="__codelineno-5-86"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-87" id="__codelineno-5-87" name="__codelineno-5-87"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-5-88" id="__codelineno-5-88" name="__codelineno-5-88"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-5-89" id="__codelineno-5-89" name="__codelineno-5-89"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">27</span>,
+<a href="#__codelineno-5-90" id="__codelineno-5-90" name="__codelineno-5-90"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379490</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-91" id="__codelineno-5-91" name="__codelineno-5-91"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379490</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-5-92" id="__codelineno-5-92" name="__codelineno-5-92"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-93" id="__codelineno-5-93" name="__codelineno-5-93"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-94" id="__codelineno-5-94" name="__codelineno-5-94"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-95" id="__codelineno-5-95" name="__codelineno-5-95"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:11.204Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-96" id="__codelineno-5-96" name="__codelineno-5-96"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.988Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-97" id="__codelineno-5-97" name="__codelineno-5-97"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T12:58:10.497Z"</span><span class="o">)</span>,
+<a href="#__codelineno-5-98" id="__codelineno-5-98" name="__codelineno-5-98"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-5-99" id="__codelineno-5-99" name="__codelineno-5-99"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-100" id="__codelineno-5-100" name="__codelineno-5-100"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">'mongocfg1:27017'</span>,
+<a href="#__codelineno-5-101" id="__codelineno-5-101" name="__codelineno-5-101"></a><span class="w">      </span>syncSourceId:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-5-102" id="__codelineno-5-102" name="__codelineno-5-102"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-5-103" id="__codelineno-5-103" name="__codelineno-5-103"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-104" id="__codelineno-5-104" name="__codelineno-5-104"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-5-105" id="__codelineno-5-105" name="__codelineno-5-105"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-5-106" id="__codelineno-5-106" name="__codelineno-5-106"></a><span class="w">  </span><span class="o">]</span>,
+<a href="#__codelineno-5-107" id="__codelineno-5-107" name="__codelineno-5-107"></a><span class="w">  </span>ok:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-5-108" id="__codelineno-5-108" name="__codelineno-5-108"></a><span class="w">  </span>lastCommittedOpTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-5-109" id="__codelineno-5-109" name="__codelineno-5-109"></a><span class="w">  </span><span class="s1">'$clusterTime'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-5-110" id="__codelineno-5-110" name="__codelineno-5-110"></a><span class="w">    </span>clusterTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-5-111" id="__codelineno-5-111" name="__codelineno-5-111"></a><span class="w">    </span>signature:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-5-112" id="__codelineno-5-112" name="__codelineno-5-112"></a><span class="w">      </span>hash:<span class="w"> </span>Binary<span class="o">(</span>Buffer.from<span class="o">(</span><span class="s2">"0000000000000000000000000000000000000000"</span>,<span class="w"> </span><span class="s2">"hex"</span><span class="o">)</span>,<span class="w"> </span><span class="m">0</span><span class="o">)</span>,
+<a href="#__codelineno-5-113" id="__codelineno-5-113" name="__codelineno-5-113"></a><span class="w">      </span>keyId:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>
+<a href="#__codelineno-5-114" id="__codelineno-5-114" name="__codelineno-5-114"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-5-115" id="__codelineno-5-115" name="__codelineno-5-115"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-5-116" id="__codelineno-5-116" name="__codelineno-5-116"></a><span class="w">  </span>operationTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379491</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-5-117" id="__codelineno-5-117" name="__codelineno-5-117"></a><span class="o">}</span>
+</code></pre></div>
+<p>Salimos del servidor mongocfg1 y entramos en <strong>mongoshard11</strong> para iniciar el clúster del conjunto de réplicas para el primer fragmento (shard1).</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nb">exit</span><span class="w"> </span>
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nb">exit</span>
+<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mongoshard11<span class="w"> </span>/bin/bash
+<a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>
+<a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>mongosh
+<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a>
+<a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a>rs.initiate<span class="o">({</span>_id<span class="w"> </span>:<span class="w"> </span><span class="s2">"shard1"</span>,<span class="w"> </span>members:<span class="w"> </span><span class="o">[{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard11"</span><span class="w"> </span><span class="o">}</span>,<span class="o">{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard12"</span><span class="w"> </span><span class="o">}</span>,<span class="o">{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard13"</span><span class="w"> </span><span class="o">}]})</span>
+</code></pre></div>
+<p>Comprobamos el resultado:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>shard1<span class="w"> </span><span class="o">[</span>direct:<span class="w"> </span>secondary<span class="o">]</span><span class="w"> </span>test&gt;<span class="w"> </span>rs.status<span class="o">()</span>
+<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="o">{</span>
+<a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span>set:<span class="w"> </span><span class="s1">'shard1'</span>,
+<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span>date:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:15.130Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">  </span>myState:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">  </span>term:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">  </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">  </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">  </span>heartbeatIntervalMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"2000"</span><span class="o">)</span>,
+<a href="#__codelineno-7-10" id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="w">  </span>majorityVoteCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-11" id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="w">  </span>writeMajorityCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-12" id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="w">  </span>votingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-7-13" id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="w">  </span>writableVotingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-7-14" id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="w">  </span>optimes:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-7-15" id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="w">    </span>lastCommittedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-16" id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="w">    </span>lastCommittedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-17" id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="w">    </span>readConcernMajorityOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="w">    </span>appliedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-19" id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="w">    </span>durableOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-20" id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="w">    </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-21" id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="w">    </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>
+<a href="#__codelineno-7-22" id="__codelineno-7-22" name="__codelineno-7-22"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-7-23" id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="w">  </span>lastStableRecoveryTimestamp:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379655</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-7-24" id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="w">  </span>electionCandidateMetrics:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-7-25" id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="w">    </span>lastElectionReason:<span class="w"> </span><span class="s1">'electionTimeout'</span>,
+<a href="#__codelineno-7-26" id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="w">    </span>lastElectionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:05.716Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-27" id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="w">    </span>electionTerm:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-7-28" id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="w">    </span>lastCommittedOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379655</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-29" id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="w">    </span>lastSeenOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379655</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-30" id="__codelineno-7-30" name="__codelineno-7-30"></a><span class="w">    </span>numVotesNeeded:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-31" id="__codelineno-7-31" name="__codelineno-7-31"></a><span class="w">    </span>priorityAtElection:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-32" id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="w">    </span>electionTimeoutMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"10000"</span><span class="o">)</span>,
+<a href="#__codelineno-7-33" id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="w">    </span>numCatchUpOps:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-7-34" id="__codelineno-7-34" name="__codelineno-7-34"></a><span class="w">    </span>newTermStartDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:05.757Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-35" id="__codelineno-7-35" name="__codelineno-7-35"></a><span class="w">    </span>wMajorityWriteAvailabilityDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.179Z"</span><span class="o">)</span>
+<a href="#__codelineno-7-36" id="__codelineno-7-36" name="__codelineno-7-36"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-7-37" id="__codelineno-7-37" name="__codelineno-7-37"></a><span class="w">  </span>members:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-7-38" id="__codelineno-7-38" name="__codelineno-7-38"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-7-39" id="__codelineno-7-39" name="__codelineno-7-39"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-7-40" id="__codelineno-7-40" name="__codelineno-7-40"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard11:27017'</span>,
+<a href="#__codelineno-7-41" id="__codelineno-7-41" name="__codelineno-7-41"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-42" id="__codelineno-7-42" name="__codelineno-7-42"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-43" id="__codelineno-7-43" name="__codelineno-7-43"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'PRIMARY'</span>,
+<a href="#__codelineno-7-44" id="__codelineno-7-44" name="__codelineno-7-44"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">750</span>,
+<a href="#__codelineno-7-45" id="__codelineno-7-45" name="__codelineno-7-45"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-46" id="__codelineno-7-46" name="__codelineno-7-46"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-47" id="__codelineno-7-47" name="__codelineno-7-47"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-48" id="__codelineno-7-48" name="__codelineno-7-48"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-49" id="__codelineno-7-49" name="__codelineno-7-49"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-50" id="__codelineno-7-50" name="__codelineno-7-50"></a><span class="w">      </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-7-51" id="__codelineno-7-51" name="__codelineno-7-51"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-52" id="__codelineno-7-52" name="__codelineno-7-52"></a><span class="w">      </span>electionTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379665</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-7-53" id="__codelineno-7-53" name="__codelineno-7-53"></a><span class="w">      </span>electionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:05.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-54" id="__codelineno-7-54" name="__codelineno-7-54"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-55" id="__codelineno-7-55" name="__codelineno-7-55"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-56" id="__codelineno-7-56" name="__codelineno-7-56"></a><span class="w">      </span>self:<span class="w"> </span>true,
+<a href="#__codelineno-7-57" id="__codelineno-7-57" name="__codelineno-7-57"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>
+<a href="#__codelineno-7-58" id="__codelineno-7-58" name="__codelineno-7-58"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-7-59" id="__codelineno-7-59" name="__codelineno-7-59"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-7-60" id="__codelineno-7-60" name="__codelineno-7-60"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-61" id="__codelineno-7-61" name="__codelineno-7-61"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard12:27017'</span>,
+<a href="#__codelineno-7-62" id="__codelineno-7-62" name="__codelineno-7-62"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-63" id="__codelineno-7-63" name="__codelineno-7-63"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-64" id="__codelineno-7-64" name="__codelineno-7-64"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-7-65" id="__codelineno-7-65" name="__codelineno-7-65"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">19</span>,
+<a href="#__codelineno-7-66" id="__codelineno-7-66" name="__codelineno-7-66"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-67" id="__codelineno-7-67" name="__codelineno-7-67"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-68" id="__codelineno-7-68" name="__codelineno-7-68"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-69" id="__codelineno-7-69" name="__codelineno-7-69"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-70" id="__codelineno-7-70" name="__codelineno-7-70"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-71" id="__codelineno-7-71" name="__codelineno-7-71"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-72" id="__codelineno-7-72" name="__codelineno-7-72"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:13.731Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-73" id="__codelineno-7-73" name="__codelineno-7-73"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:13.243Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-74" id="__codelineno-7-74" name="__codelineno-7-74"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-7-75" id="__codelineno-7-75" name="__codelineno-7-75"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-76" id="__codelineno-7-76" name="__codelineno-7-76"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">'mongoshard11:27017'</span>,
+<a href="#__codelineno-7-77" id="__codelineno-7-77" name="__codelineno-7-77"></a><span class="w">      </span>syncSourceId:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-7-78" id="__codelineno-7-78" name="__codelineno-7-78"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-79" id="__codelineno-7-79" name="__codelineno-7-79"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-80" id="__codelineno-7-80" name="__codelineno-7-80"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-7-81" id="__codelineno-7-81" name="__codelineno-7-81"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-7-82" id="__codelineno-7-82" name="__codelineno-7-82"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-7-83" id="__codelineno-7-83" name="__codelineno-7-83"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-84" id="__codelineno-7-84" name="__codelineno-7-84"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard13:27017'</span>,
+<a href="#__codelineno-7-85" id="__codelineno-7-85" name="__codelineno-7-85"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-86" id="__codelineno-7-86" name="__codelineno-7-86"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-7-87" id="__codelineno-7-87" name="__codelineno-7-87"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-7-88" id="__codelineno-7-88" name="__codelineno-7-88"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">19</span>,
+<a href="#__codelineno-7-89" id="__codelineno-7-89" name="__codelineno-7-89"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-90" id="__codelineno-7-90" name="__codelineno-7-90"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-7-91" id="__codelineno-7-91" name="__codelineno-7-91"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-92" id="__codelineno-7-92" name="__codelineno-7-92"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-93" id="__codelineno-7-93" name="__codelineno-7-93"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-94" id="__codelineno-7-94" name="__codelineno-7-94"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:07.258Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-95" id="__codelineno-7-95" name="__codelineno-7-95"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:13.731Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-96" id="__codelineno-7-96" name="__codelineno-7-96"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:01:13.242Z"</span><span class="o">)</span>,
+<a href="#__codelineno-7-97" id="__codelineno-7-97" name="__codelineno-7-97"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-7-98" id="__codelineno-7-98" name="__codelineno-7-98"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-99" id="__codelineno-7-99" name="__codelineno-7-99"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">'mongoshard11:27017'</span>,
+<a href="#__codelineno-7-100" id="__codelineno-7-100" name="__codelineno-7-100"></a><span class="w">      </span>syncSourceId:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-7-101" id="__codelineno-7-101" name="__codelineno-7-101"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-7-102" id="__codelineno-7-102" name="__codelineno-7-102"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-103" id="__codelineno-7-103" name="__codelineno-7-103"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-7-104" id="__codelineno-7-104" name="__codelineno-7-104"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-7-105" id="__codelineno-7-105" name="__codelineno-7-105"></a><span class="w">  </span><span class="o">]</span>,
+<a href="#__codelineno-7-106" id="__codelineno-7-106" name="__codelineno-7-106"></a><span class="w">  </span>ok:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-7-107" id="__codelineno-7-107" name="__codelineno-7-107"></a><span class="w">  </span><span class="s1">'$clusterTime'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-7-108" id="__codelineno-7-108" name="__codelineno-7-108"></a><span class="w">    </span>clusterTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-7-109" id="__codelineno-7-109" name="__codelineno-7-109"></a><span class="w">    </span>signature:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-7-110" id="__codelineno-7-110" name="__codelineno-7-110"></a><span class="w">      </span>hash:<span class="w"> </span>Binary<span class="o">(</span>Buffer.from<span class="o">(</span><span class="s2">"0000000000000000000000000000000000000000"</span>,<span class="w"> </span><span class="s2">"hex"</span><span class="o">)</span>,<span class="w"> </span><span class="m">0</span><span class="o">)</span>,
+<a href="#__codelineno-7-111" id="__codelineno-7-111" name="__codelineno-7-111"></a><span class="w">      </span>keyId:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>
+<a href="#__codelineno-7-112" id="__codelineno-7-112" name="__codelineno-7-112"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-7-113" id="__codelineno-7-113" name="__codelineno-7-113"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-7-114" id="__codelineno-7-114" name="__codelineno-7-114"></a><span class="w">  </span>operationTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379667</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-7-115" id="__codelineno-7-115" name="__codelineno-7-115"></a><span class="o">}</span>
+</code></pre></div>
+<p>Salimos y hacemos lo mismo con el segundo shard. Para ello tendremos que entrar en <strong>mongoshard21</strong> e iniciar el conjunto de réplicas de shard2.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">exit</span>
+<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nb">exit</span>
+<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>
+<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mongoshard21<span class="w"> </span>/bin/bash
+<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>
+<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a>mongosh
+<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a>
+<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>rs.initiate<span class="o">({</span>_id<span class="w"> </span>:<span class="w"> </span><span class="s2">"shard2"</span>,<span class="w"> </span>members:<span class="w"> </span><span class="o">[{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard21"</span><span class="w"> </span><span class="o">}</span>,<span class="o">{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard22"</span><span class="w"> </span><span class="o">}</span>,<span class="o">{</span><span class="w"> </span>_id<span class="w"> </span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span>host<span class="w"> </span>:<span class="w"> </span><span class="s2">"mongoshard23"</span><span class="w"> </span><span class="o">}]})</span>
+</code></pre></div>
+<p>Comprobamos el resultado:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>shard2<span class="w"> </span><span class="o">[</span>direct:<span class="w"> </span>secondary<span class="o">]</span><span class="w"> </span>test&gt;<span class="w"> </span>rs.status<span class="o">()</span>
+<a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="o">{</span>
+<a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="w">  </span>set:<span class="w"> </span><span class="s1">'shard2'</span>,
+<a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="w">  </span>date:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.343Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-5" id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="w">  </span>myState:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-6" id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="w">  </span>term:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-9-7" id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="w">  </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-8" id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="w">  </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-9-9" id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="w">  </span>heartbeatIntervalMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"2000"</span><span class="o">)</span>,
+<a href="#__codelineno-9-10" id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="w">  </span>majorityVoteCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-11" id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="w">  </span>writeMajorityCount:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-12" id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="w">  </span>votingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-9-13" id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="w">  </span>writableVotingMembersCount:<span class="w"> </span><span class="m">3</span>,
+<a href="#__codelineno-9-14" id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="w">  </span>optimes:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-9-15" id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="w">    </span>lastCommittedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-16" id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="w">    </span>lastCommittedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.836Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-17" id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="w">    </span>readConcernMajorityOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-18" id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="w">    </span>appliedOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-19" id="__codelineno-9-19" name="__codelineno-9-19"></a><span class="w">    </span>durableOpTime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-20" id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="w">    </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.304Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-21" id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="w">    </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.304Z"</span><span class="o">)</span>
+<a href="#__codelineno-9-22" id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-9-23" id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="w">  </span>lastStableRecoveryTimestamp:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-9-24" id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="w">  </span>electionCandidateMetrics:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-9-25" id="__codelineno-9-25" name="__codelineno-9-25"></a><span class="w">    </span>lastElectionReason:<span class="w"> </span><span class="s1">'electionTimeout'</span>,
+<a href="#__codelineno-9-26" id="__codelineno-9-26" name="__codelineno-9-26"></a><span class="w">    </span>lastElectionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.197Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-27" id="__codelineno-9-27" name="__codelineno-9-27"></a><span class="w">    </span>electionTerm:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span>,
+<a href="#__codelineno-9-28" id="__codelineno-9-28" name="__codelineno-9-28"></a><span class="w">    </span>lastCommittedOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-29" id="__codelineno-9-29" name="__codelineno-9-29"></a><span class="w">    </span>lastSeenOpTimeAtElection:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-30" id="__codelineno-9-30" name="__codelineno-9-30"></a><span class="w">    </span>numVotesNeeded:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-31" id="__codelineno-9-31" name="__codelineno-9-31"></a><span class="w">    </span>priorityAtElection:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-32" id="__codelineno-9-32" name="__codelineno-9-32"></a><span class="w">    </span>electionTimeoutMillis:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"10000"</span><span class="o">)</span>,
+<a href="#__codelineno-9-33" id="__codelineno-9-33" name="__codelineno-9-33"></a><span class="w">    </span>numCatchUpOps:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-9-34" id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="w">    </span>newTermStartDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.274Z"</span><span class="o">)</span>
+<a href="#__codelineno-9-35" id="__codelineno-9-35" name="__codelineno-9-35"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-9-36" id="__codelineno-9-36" name="__codelineno-9-36"></a><span class="w">  </span>members:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-9-37" id="__codelineno-9-37" name="__codelineno-9-37"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-9-38" id="__codelineno-9-38" name="__codelineno-9-38"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-9-39" id="__codelineno-9-39" name="__codelineno-9-39"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard21:27017'</span>,
+<a href="#__codelineno-9-40" id="__codelineno-9-40" name="__codelineno-9-40"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-41" id="__codelineno-9-41" name="__codelineno-9-41"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-42" id="__codelineno-9-42" name="__codelineno-9-42"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'PRIMARY'</span>,
+<a href="#__codelineno-9-43" id="__codelineno-9-43" name="__codelineno-9-43"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">821</span>,
+<a href="#__codelineno-9-44" id="__codelineno-9-44" name="__codelineno-9-44"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-45" id="__codelineno-9-45" name="__codelineno-9-45"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-46" id="__codelineno-9-46" name="__codelineno-9-46"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.304Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-47" id="__codelineno-9-47" name="__codelineno-9-47"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.304Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-48" id="__codelineno-9-48" name="__codelineno-9-48"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-49" id="__codelineno-9-49" name="__codelineno-9-49"></a><span class="w">      </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-9-50" id="__codelineno-9-50" name="__codelineno-9-50"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-51" id="__codelineno-9-51" name="__codelineno-9-51"></a><span class="w">      </span>electionTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-9-52" id="__codelineno-9-52" name="__codelineno-9-52"></a><span class="w">      </span>electionDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-53" id="__codelineno-9-53" name="__codelineno-9-53"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-54" id="__codelineno-9-54" name="__codelineno-9-54"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-55" id="__codelineno-9-55" name="__codelineno-9-55"></a><span class="w">      </span>self:<span class="w"> </span>true,
+<a href="#__codelineno-9-56" id="__codelineno-9-56" name="__codelineno-9-56"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>
+<a href="#__codelineno-9-57" id="__codelineno-9-57" name="__codelineno-9-57"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-9-58" id="__codelineno-9-58" name="__codelineno-9-58"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-9-59" id="__codelineno-9-59" name="__codelineno-9-59"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-60" id="__codelineno-9-60" name="__codelineno-9-60"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard22:27017'</span>,
+<a href="#__codelineno-9-61" id="__codelineno-9-61" name="__codelineno-9-61"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-62" id="__codelineno-9-62" name="__codelineno-9-62"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-63" id="__codelineno-9-63" name="__codelineno-9-63"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-9-64" id="__codelineno-9-64" name="__codelineno-9-64"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">10</span>,
+<a href="#__codelineno-9-65" id="__codelineno-9-65" name="__codelineno-9-65"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-66" id="__codelineno-9-66" name="__codelineno-9-66"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-67" id="__codelineno-9-67" name="__codelineno-9-67"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-68" id="__codelineno-9-68" name="__codelineno-9-68"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-69" id="__codelineno-9-69" name="__codelineno-9-69"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.836Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-70" id="__codelineno-9-70" name="__codelineno-9-70"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.836Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-71" id="__codelineno-9-71" name="__codelineno-9-71"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.244Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-72" id="__codelineno-9-72" name="__codelineno-9-72"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.249Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-73" id="__codelineno-9-73" name="__codelineno-9-73"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-9-74" id="__codelineno-9-74" name="__codelineno-9-74"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-75" id="__codelineno-9-75" name="__codelineno-9-75"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-76" id="__codelineno-9-76" name="__codelineno-9-76"></a><span class="w">      </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-9-77" id="__codelineno-9-77" name="__codelineno-9-77"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-78" id="__codelineno-9-78" name="__codelineno-9-78"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-79" id="__codelineno-9-79" name="__codelineno-9-79"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">0</span>
+<a href="#__codelineno-9-80" id="__codelineno-9-80" name="__codelineno-9-80"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-9-81" id="__codelineno-9-81" name="__codelineno-9-81"></a><span class="w">    </span><span class="o">{</span>
+<a href="#__codelineno-9-82" id="__codelineno-9-82" name="__codelineno-9-82"></a><span class="w">      </span>_id:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-83" id="__codelineno-9-83" name="__codelineno-9-83"></a><span class="w">      </span>name:<span class="w"> </span><span class="s1">'mongoshard23:27017'</span>,
+<a href="#__codelineno-9-84" id="__codelineno-9-84" name="__codelineno-9-84"></a><span class="w">      </span>health:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-85" id="__codelineno-9-85" name="__codelineno-9-85"></a><span class="w">      </span>state:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-9-86" id="__codelineno-9-86" name="__codelineno-9-86"></a><span class="w">      </span>stateStr:<span class="w"> </span><span class="s1">'SECONDARY'</span>,
+<a href="#__codelineno-9-87" id="__codelineno-9-87" name="__codelineno-9-87"></a><span class="w">      </span>uptime:<span class="w"> </span><span class="m">10</span>,
+<a href="#__codelineno-9-88" id="__codelineno-9-88" name="__codelineno-9-88"></a><span class="w">      </span>optime:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-89" id="__codelineno-9-89" name="__codelineno-9-89"></a><span class="w">      </span>optimeDurable:<span class="w"> </span><span class="o">{</span><span class="w"> </span>ts:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379736</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span>,<span class="w"> </span>t:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-1"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-9-90" id="__codelineno-9-90" name="__codelineno-9-90"></a><span class="w">      </span>optimeDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-91" id="__codelineno-9-91" name="__codelineno-9-91"></a><span class="w">      </span>optimeDurableDate:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.000Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-92" id="__codelineno-9-92" name="__codelineno-9-92"></a><span class="w">      </span>lastAppliedWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.836Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-93" id="__codelineno-9-93" name="__codelineno-9-93"></a><span class="w">      </span>lastDurableWallTime:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:16.836Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-94" id="__codelineno-9-94" name="__codelineno-9-94"></a><span class="w">      </span>lastHeartbeat:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.244Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-95" id="__codelineno-9-95" name="__codelineno-9-95"></a><span class="w">      </span>lastHeartbeatRecv:<span class="w"> </span>ISODate<span class="o">(</span><span class="s2">"2023-02-14T13:02:27.249Z"</span><span class="o">)</span>,
+<a href="#__codelineno-9-96" id="__codelineno-9-96" name="__codelineno-9-96"></a><span class="w">      </span>pingMs:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>,
+<a href="#__codelineno-9-97" id="__codelineno-9-97" name="__codelineno-9-97"></a><span class="w">      </span>lastHeartbeatMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-98" id="__codelineno-9-98" name="__codelineno-9-98"></a><span class="w">      </span>syncSourceHost:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-99" id="__codelineno-9-99" name="__codelineno-9-99"></a><span class="w">      </span>syncSourceId:<span class="w"> </span>-1,
+<a href="#__codelineno-9-100" id="__codelineno-9-100" name="__codelineno-9-100"></a><span class="w">      </span>infoMessage:<span class="w"> </span><span class="s1">''</span>,
+<a href="#__codelineno-9-101" id="__codelineno-9-101" name="__codelineno-9-101"></a><span class="w">      </span>configVersion:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-102" id="__codelineno-9-102" name="__codelineno-9-102"></a><span class="w">      </span>configTerm:<span class="w"> </span><span class="m">0</span>
+<a href="#__codelineno-9-103" id="__codelineno-9-103" name="__codelineno-9-103"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-9-104" id="__codelineno-9-104" name="__codelineno-9-104"></a><span class="w">  </span><span class="o">]</span>,
+<a href="#__codelineno-9-105" id="__codelineno-9-105" name="__codelineno-9-105"></a><span class="w">  </span>ok:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-9-106" id="__codelineno-9-106" name="__codelineno-9-106"></a><span class="w">  </span><span class="s1">'$clusterTime'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-9-107" id="__codelineno-9-107" name="__codelineno-9-107"></a><span class="w">    </span>clusterTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-9-108" id="__codelineno-9-108" name="__codelineno-9-108"></a><span class="w">    </span>signature:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-9-109" id="__codelineno-9-109" name="__codelineno-9-109"></a><span class="w">      </span>hash:<span class="w"> </span>Binary<span class="o">(</span>Buffer.from<span class="o">(</span><span class="s2">"0000000000000000000000000000000000000000"</span>,<span class="w"> </span><span class="s2">"hex"</span><span class="o">)</span>,<span class="w"> </span><span class="m">0</span><span class="o">)</span>,
+<a href="#__codelineno-9-110" id="__codelineno-9-110" name="__codelineno-9-110"></a><span class="w">      </span>keyId:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>
+<a href="#__codelineno-9-111" id="__codelineno-9-111" name="__codelineno-9-111"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-9-112" id="__codelineno-9-112" name="__codelineno-9-112"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-9-113" id="__codelineno-9-113" name="__codelineno-9-113"></a><span class="w">  </span>operationTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379747</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-9-114" id="__codelineno-9-114" name="__codelineno-9-114"></a><span class="o">}</span>
+</code></pre></div>
+<p>Salimos y entramos en la instancia <strong>mongos1</strong> para añadir los clústeres fragmentados. Esto lo haremos con <code>sh.addShard()</code>.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nb">exit</span>
+<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nb">exit</span>
+<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>
+<a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>mongos1<span class="w"> </span>/bin/bash
+<a href="#__codelineno-10-5" id="__codelineno-10-5" name="__codelineno-10-5"></a>
+<a href="#__codelineno-10-6" id="__codelineno-10-6" name="__codelineno-10-6"></a>mongosh
+<a href="#__codelineno-10-7" id="__codelineno-10-7" name="__codelineno-10-7"></a>
+<a href="#__codelineno-10-8" id="__codelineno-10-8" name="__codelineno-10-8"></a>sh.addShard<span class="o">(</span><span class="s2">"shard1/mongoshard11"</span><span class="o">)</span>
+<a href="#__codelineno-10-9" id="__codelineno-10-9" name="__codelineno-10-9"></a>sh.addShard<span class="o">(</span><span class="s2">"shard2/mongoshard21"</span><span class="o">)</span>
+</code></pre></div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/img/capturas-arantxa/102.png"><img alt="docker-compose" src="/img/capturas-arantxa/102.png"/></a></p>
+<p>Comprobamos los resultados de añadir los fragmentos.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="o">[</span>direct:<span class="w"> </span>mongos<span class="o">]</span><span class="w"> </span>test&gt;<span class="w"> </span>sh.status<span class="o">()</span>
+<a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a>
+<a href="#__codelineno-11-3" id="__codelineno-11-3" name="__codelineno-11-3"></a>shardingVersion
+<a href="#__codelineno-11-4" id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="o">{</span>
+<a href="#__codelineno-11-5" id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">  </span>_id:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-11-6" id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">  </span>minCompatibleVersion:<span class="w"> </span><span class="m">5</span>,
+<a href="#__codelineno-11-7" id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">  </span>currentVersion:<span class="w"> </span><span class="m">6</span>,
+<a href="#__codelineno-11-8" id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="w">  </span>clusterId:<span class="w"> </span>ObjectId<span class="o">(</span><span class="s2">"63eb85532608d03f4afe05a8"</span><span class="o">)</span>
+<a href="#__codelineno-11-9" id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="o">}</span>
+<a href="#__codelineno-11-10" id="__codelineno-11-10" name="__codelineno-11-10"></a>---
+<a href="#__codelineno-11-11" id="__codelineno-11-11" name="__codelineno-11-11"></a>shards
+<a href="#__codelineno-11-12" id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="o">[</span>
+<a href="#__codelineno-11-13" id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-11-14" id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">    </span>_id:<span class="w"> </span><span class="s1">'shard1'</span>,
+<a href="#__codelineno-11-15" id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="w">    </span>host:<span class="w"> </span><span class="s1">'shard1/mongoshard11:27017,mongoshard12:27017,mongoshard13:27017'</span>,
+<a href="#__codelineno-11-16" id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="w">    </span>state:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-11-17" id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="w">    </span>topologyTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379868</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-11-18" id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-11-19" id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-11-20" id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="w">    </span>_id:<span class="w"> </span><span class="s1">'shard2'</span>,
+<a href="#__codelineno-11-21" id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="w">    </span>host:<span class="w"> </span><span class="s1">'shard2/mongoshard21:27017,mongoshard22:27017,mongoshard23:27017'</span>,
+<a href="#__codelineno-11-22" id="__codelineno-11-22" name="__codelineno-11-22"></a><span class="w">    </span>state:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-11-23" id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="w">    </span>topologyTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379880</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-11-24" id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="w">  </span><span class="o">}</span>
+<a href="#__codelineno-11-25" id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="o">]</span>
+<a href="#__codelineno-11-26" id="__codelineno-11-26" name="__codelineno-11-26"></a>---
+<a href="#__codelineno-11-27" id="__codelineno-11-27" name="__codelineno-11-27"></a>active<span class="w"> </span>mongoses
+<a href="#__codelineno-11-28" id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="o">[</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="s1">'6.0.4'</span>:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">]</span>
+<a href="#__codelineno-11-29" id="__codelineno-11-29" name="__codelineno-11-29"></a>---
+<a href="#__codelineno-11-30" id="__codelineno-11-30" name="__codelineno-11-30"></a>autosplit
+<a href="#__codelineno-11-31" id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="o">{</span><span class="w"> </span><span class="s1">'Currently enabled'</span>:<span class="w"> </span><span class="s1">'yes'</span><span class="w"> </span><span class="o">}</span>
+<a href="#__codelineno-11-32" id="__codelineno-11-32" name="__codelineno-11-32"></a>---
+<a href="#__codelineno-11-33" id="__codelineno-11-33" name="__codelineno-11-33"></a>balancer
+<a href="#__codelineno-11-34" id="__codelineno-11-34" name="__codelineno-11-34"></a><span class="o">{</span>
+<a href="#__codelineno-11-35" id="__codelineno-11-35" name="__codelineno-11-35"></a><span class="w">  </span><span class="s1">'Currently enabled'</span>:<span class="w"> </span><span class="s1">'yes'</span>,
+<a href="#__codelineno-11-36" id="__codelineno-11-36" name="__codelineno-11-36"></a><span class="w">  </span><span class="s1">'Failed balancer rounds in last 5 attempts'</span>:<span class="w"> </span><span class="m">0</span>,
+<a href="#__codelineno-11-37" id="__codelineno-11-37" name="__codelineno-11-37"></a><span class="w">  </span><span class="s1">'Currently running'</span>:<span class="w"> </span><span class="s1">'no'</span>,
+<a href="#__codelineno-11-38" id="__codelineno-11-38" name="__codelineno-11-38"></a><span class="w">  </span><span class="s1">'Migration Results for the last 24 hours'</span>:<span class="w"> </span><span class="s1">'No recent migrations'</span>
+<a href="#__codelineno-11-39" id="__codelineno-11-39" name="__codelineno-11-39"></a><span class="o">}</span>
+<a href="#__codelineno-11-40" id="__codelineno-11-40" name="__codelineno-11-40"></a>---
+<a href="#__codelineno-11-41" id="__codelineno-11-41" name="__codelineno-11-41"></a>databases
+<a href="#__codelineno-11-42" id="__codelineno-11-42" name="__codelineno-11-42"></a><span class="o">[</span>
+<a href="#__codelineno-11-43" id="__codelineno-11-43" name="__codelineno-11-43"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-11-44" id="__codelineno-11-44" name="__codelineno-11-44"></a><span class="w">    </span>database:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span><span class="s1">'config'</span>,<span class="w"> </span>primary:<span class="w"> </span><span class="s1">'config'</span>,<span class="w"> </span>partitioned:<span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-11-45" id="__codelineno-11-45" name="__codelineno-11-45"></a><span class="w">    </span>collections:<span class="w"> </span><span class="o">{}</span>
+<a href="#__codelineno-11-46" id="__codelineno-11-46" name="__codelineno-11-46"></a><span class="w">  </span><span class="o">}</span>
+<a href="#__codelineno-11-47" id="__codelineno-11-47" name="__codelineno-11-47"></a><span class="o">]</span>
+</code></pre></div>
+<h4 id="sharded-database">Sharded database</h4>
+<p>Ya podremos usar libremente el servidor de consultas mongos para trabajar con bases de datos, documentos y colecciones tal como se haría con una base de datos típica sin fragmentar. Sin embargo, si no se realiza ninguna configuración más, cualquier dato que se agregue al clúster terminará almacenándose solo en el fragmento principal, no se dividirá automáticamente y no experimentará ninguno de los beneficios que proporciona la fragmentación.</p>
+<p>Para utilizar el clúster MongoDB fragmentado que hemos creado en todo su potencial, se debe habilitar la fragmentación para una base de datos dentro del clúster. Una base de datos MongoDB solo puede contener colecciones fragmentadas si tiene habilitada la fragmentación.</p>
+<p>Para ello vamos a trabajar con la base de datos shardedDB y config desde el servidor mongos1:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>use<span class="w"> </span>shardedDB
+<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>sh.enableSharding<span class="o">(</span><span class="s2">"shardedDB"</span><span class="o">)</span>
+</code></pre></div>
+<p>Al activar la fragmentación debería aparecer lo siguiente:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="o">{</span>
+<a href="#__codelineno-13-2" id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="w">  </span>ok:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-13-3" id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">  </span><span class="s1">'$clusterTime'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-13-4" id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">    </span>clusterTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379934</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-13-5" id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">    </span>signature:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-13-6" id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">      </span>hash:<span class="w"> </span>Binary<span class="o">(</span>Buffer.from<span class="o">(</span><span class="s2">"0000000000000000000000000000000000000000"</span>,<span class="w"> </span><span class="s2">"hex"</span><span class="o">)</span>,<span class="w"> </span><span class="m">0</span><span class="o">)</span>,
+<a href="#__codelineno-13-7" id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">      </span>keyId:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>
+<a href="#__codelineno-13-8" id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-13-9" id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-13-10" id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">  </span>operationTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379934</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-13-11" id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="o">}</span>
+</code></pre></div>
+<p>Vamos a config y consultamos las bases de datos.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>use<span class="w"> </span>config
+<a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a>db.databases.find<span class="o">()</span>
+</code></pre></div>
+<p>Nos debe aparecer algo parecido a lo siguiente:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="o">[</span>
+<a href="#__codelineno-15-2" id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-15-3" id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">    </span>_id:<span class="w"> </span><span class="s1">'shardedDB'</span>,
+<a href="#__codelineno-15-4" id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">    </span>primary:<span class="w"> </span><span class="s1">'shard2'</span>,
+<a href="#__codelineno-15-5" id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">    </span>partitioned:<span class="w"> </span>false,
+<a href="#__codelineno-15-6" id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">    </span>version:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-15-7" id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">      </span>uuid:<span class="w"> </span>new<span class="w"> </span>UUID<span class="o">(</span><span class="s2">"9926816f-0ed8-428c-a170-cbd14b270c5e"</span><span class="o">)</span>,
+<a href="#__codelineno-15-8" id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="w">      </span>timestamp:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379933</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-15-9" id="__codelineno-15-9" name="__codelineno-15-9"></a><span class="w">      </span>lastMod:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-15-10" id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-15-11" id="__codelineno-15-11" name="__codelineno-15-11"></a><span class="w">  </span><span class="o">}</span>
+<a href="#__codelineno-15-12" id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="o">]</span>
+</code></pre></div>
+<p>Creamos a continuación la colección fragmentada en la base de datos shardedDB. En este caso vamos a utilizar la estrategia de fragmentación mediante hash (Hashed Sharding). La otra forma de hacerlo sería mediante fragmentación por rangos (Ranged Sharding).</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>use<span class="w"> </span>shardedDB
+<a href="#__codelineno-16-2" id="__codelineno-16-2" name="__codelineno-16-2"></a>db.shardedCollection.ensureIndex<span class="o">({</span>_id:<span class="w"> </span><span class="s2">"hashed"</span><span class="o">})</span>
+<a href="#__codelineno-16-3" id="__codelineno-16-3" name="__codelineno-16-3"></a>sh.shardCollection<span class="o">(</span><span class="s2">"shardedDB.shardedCollection"</span>,<span class="w"> </span><span class="o">{</span><span class="s2">"_id"</span>:<span class="w"> </span><span class="s2">"hashed"</span><span class="o">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="o">{</span>
+<a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">  </span>collectionsharded:<span class="w"> </span><span class="s1">'shardedDB.shardedCollection'</span>,
+<a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">  </span>ok:<span class="w"> </span><span class="m">1</span>,
+<a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">  </span><span class="s1">'$clusterTime'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-17-5" id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="w">    </span>clusterTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676380085</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">37</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-17-6" id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">    </span>signature:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-17-7" id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="w">      </span>hash:<span class="w"> </span>Binary<span class="o">(</span>Buffer.from<span class="o">(</span><span class="s2">"0000000000000000000000000000000000000000"</span>,<span class="w"> </span><span class="s2">"hex"</span><span class="o">)</span>,<span class="w"> </span><span class="m">0</span><span class="o">)</span>,
+<a href="#__codelineno-17-8" id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">      </span>keyId:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span>
+<a href="#__codelineno-17-9" id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-17-10" id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-17-11" id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="w">  </span>operationTime:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676380085</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">33</span><span class="w"> </span><span class="o">})</span>
+<a href="#__codelineno-17-12" id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="o">}</span>
+</code></pre></div>
+<p>Insertamos algún registro a la colección.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="k">for</span><span class="o">(</span>var<span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span>i<span class="w"> </span>&lt;<span class="w"> </span><span class="m">1500</span><span class="p">;</span><span class="w"> </span>i++<span class="o">)</span><span class="w"> </span>db.shardedCollection.insertOne<span class="o">({</span>x:<span class="w"> </span>i<span class="o">})</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="o">{</span>
+<a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="w">  </span>acknowledged:<span class="w"> </span>true,
+<a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="w">  </span>insertedId:<span class="w"> </span>ObjectId<span class="o">(</span><span class="s2">"63eb8845b958d280e786eb46"</span><span class="o">)</span>
+<a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="o">}</span>
+</code></pre></div>
+<p>Por último comprobamos la distribución de los datos guardados en shard1 y shard2.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>db.shardedCollection.getShardDistribution<span class="o">()</span>
+</code></pre></div>
+<p>El resultado nos muestra que los datos se han fragmentado en ambos shards. Tenemos 4 chunks, dos en cada shard. También vemos en Totals el porcentaje de los datos guardados en cada uno.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>Shard<span class="w"> </span>shard2<span class="w"> </span>at<span class="w"> </span>shard2/mongoshard21:27017,mongoshard22:27017,mongoshard23:27017
+<a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="o">{</span>
+<a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'44KiB'</span>,
+<a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">1554</span>,
+<a href="#__codelineno-21-5" id="__codelineno-21-5" name="__codelineno-21-5"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a><span class="w">  </span><span class="s1">'estimated data per chunk'</span>:<span class="w"> </span><span class="s1">'22KiB'</span>,
+<a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="w">  </span><span class="s1">'estimated docs per chunk'</span>:<span class="w"> </span><span class="m">777</span>
+<a href="#__codelineno-21-8" id="__codelineno-21-8" name="__codelineno-21-8"></a><span class="o">}</span>
+<a href="#__codelineno-21-9" id="__codelineno-21-9" name="__codelineno-21-9"></a>---
+<a href="#__codelineno-21-10" id="__codelineno-21-10" name="__codelineno-21-10"></a>Shard<span class="w"> </span>shard1<span class="w"> </span>at<span class="w"> </span>shard1/mongoshard11:27017,mongoshard12:27017,mongoshard13:27017
+<a href="#__codelineno-21-11" id="__codelineno-21-11" name="__codelineno-21-11"></a><span class="o">{</span>
+<a href="#__codelineno-21-12" id="__codelineno-21-12" name="__codelineno-21-12"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'40KiB'</span>,
+<a href="#__codelineno-21-13" id="__codelineno-21-13" name="__codelineno-21-13"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">1446</span>,
+<a href="#__codelineno-21-14" id="__codelineno-21-14" name="__codelineno-21-14"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-21-15" id="__codelineno-21-15" name="__codelineno-21-15"></a><span class="w">  </span><span class="s1">'estimated data per chunk'</span>:<span class="w"> </span><span class="s1">'20KiB'</span>,
+<a href="#__codelineno-21-16" id="__codelineno-21-16" name="__codelineno-21-16"></a><span class="w">  </span><span class="s1">'estimated docs per chunk'</span>:<span class="w"> </span><span class="m">723</span>
+<a href="#__codelineno-21-17" id="__codelineno-21-17" name="__codelineno-21-17"></a><span class="o">}</span>
+<a href="#__codelineno-21-18" id="__codelineno-21-18" name="__codelineno-21-18"></a>---
+<a href="#__codelineno-21-19" id="__codelineno-21-19" name="__codelineno-21-19"></a>Totals
+<a href="#__codelineno-21-20" id="__codelineno-21-20" name="__codelineno-21-20"></a><span class="o">{</span>
+<a href="#__codelineno-21-21" id="__codelineno-21-21" name="__codelineno-21-21"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'84KiB'</span>,
+<a href="#__codelineno-21-22" id="__codelineno-21-22" name="__codelineno-21-22"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">3000</span>,
+<a href="#__codelineno-21-23" id="__codelineno-21-23" name="__codelineno-21-23"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">4</span>,
+<a href="#__codelineno-21-24" id="__codelineno-21-24" name="__codelineno-21-24"></a><span class="w">  </span><span class="s1">'Shard shard2'</span>:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-21-25" id="__codelineno-21-25" name="__codelineno-21-25"></a><span class="w">    </span><span class="s1">'51.8 % data'</span>,
+<a href="#__codelineno-21-26" id="__codelineno-21-26" name="__codelineno-21-26"></a><span class="w">    </span><span class="s1">'51.8 % docs in cluster'</span>,
+<a href="#__codelineno-21-27" id="__codelineno-21-27" name="__codelineno-21-27"></a><span class="w">    </span><span class="s1">'29B avg obj size on shard'</span>
+<a href="#__codelineno-21-28" id="__codelineno-21-28" name="__codelineno-21-28"></a><span class="w">  </span><span class="o">]</span>,
+<a href="#__codelineno-21-29" id="__codelineno-21-29" name="__codelineno-21-29"></a><span class="w">  </span><span class="s1">'Shard shard1'</span>:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-21-30" id="__codelineno-21-30" name="__codelineno-21-30"></a><span class="w">    </span><span class="s1">'48.2 % data'</span>,
+<a href="#__codelineno-21-31" id="__codelineno-21-31" name="__codelineno-21-31"></a><span class="w">    </span><span class="s1">'48.2 % docs in cluster'</span>,
+<a href="#__codelineno-21-32" id="__codelineno-21-32" name="__codelineno-21-32"></a><span class="w">    </span><span class="s1">'29B avg obj size on shard'</span>
+<a href="#__codelineno-21-33" id="__codelineno-21-33" name="__codelineno-21-33"></a><span class="w">  </span><span class="o">]</span>
+<a href="#__codelineno-21-34" id="__codelineno-21-34" name="__codelineno-21-34"></a><span class="o">}</span>
+</code></pre></div>
+<p>Si volvemos a hacer sh.status() nos aparecerá la información de la base de datos creada y los datos de las colecciones.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a>...
+<a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a>databases
+<a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="o">[</span>
+<a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="w">    </span>database:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span><span class="s1">'config'</span>,<span class="w"> </span>primary:<span class="w"> </span><span class="s1">'config'</span>,<span class="w"> </span>partitioned:<span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-6" id="__codelineno-22-6" name="__codelineno-22-6"></a><span class="w">    </span>collections:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-7" id="__codelineno-22-7" name="__codelineno-22-7"></a><span class="w">      </span><span class="s1">'config.system.sessions'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-8" id="__codelineno-22-8" name="__codelineno-22-8"></a><span class="w">        </span>shardKey:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-9" id="__codelineno-22-9" name="__codelineno-22-9"></a><span class="w">        </span>unique:<span class="w"> </span>false,
+<a href="#__codelineno-22-10" id="__codelineno-22-10" name="__codelineno-22-10"></a><span class="w">        </span>balancing:<span class="w"> </span>true,
+<a href="#__codelineno-22-11" id="__codelineno-22-11" name="__codelineno-22-11"></a><span class="w">        </span>chunkMetadata:<span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>shard:<span class="w"> </span><span class="s1">'shard1'</span>,<span class="w"> </span>nChunks:<span class="w"> </span><span class="m">1024</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">]</span>,
+<a href="#__codelineno-22-12" id="__codelineno-22-12" name="__codelineno-22-12"></a><span class="w">        </span>chunks:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-22-13" id="__codelineno-22-13" name="__codelineno-22-13"></a><span class="w">          </span><span class="s1">'too many chunks to print, use verbose if you want to force print'</span>
+<a href="#__codelineno-22-14" id="__codelineno-22-14" name="__codelineno-22-14"></a><span class="w">        </span><span class="o">]</span>,
+<a href="#__codelineno-22-15" id="__codelineno-22-15" name="__codelineno-22-15"></a><span class="w">        </span>tags:<span class="w"> </span><span class="o">[]</span>
+<a href="#__codelineno-22-16" id="__codelineno-22-16" name="__codelineno-22-16"></a><span class="w">      </span><span class="o">}</span>
+<a href="#__codelineno-22-17" id="__codelineno-22-17" name="__codelineno-22-17"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-22-18" id="__codelineno-22-18" name="__codelineno-22-18"></a><span class="w">  </span><span class="o">}</span>,
+<a href="#__codelineno-22-19" id="__codelineno-22-19" name="__codelineno-22-19"></a><span class="w">  </span><span class="o">{</span>
+<a href="#__codelineno-22-20" id="__codelineno-22-20" name="__codelineno-22-20"></a><span class="w">    </span>database:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-21" id="__codelineno-22-21" name="__codelineno-22-21"></a><span class="w">      </span>_id:<span class="w"> </span><span class="s1">'shardedDB'</span>,
+<a href="#__codelineno-22-22" id="__codelineno-22-22" name="__codelineno-22-22"></a><span class="w">      </span>primary:<span class="w"> </span><span class="s1">'shard2'</span>,
+<a href="#__codelineno-22-23" id="__codelineno-22-23" name="__codelineno-22-23"></a><span class="w">      </span>partitioned:<span class="w"> </span>false,
+<a href="#__codelineno-22-24" id="__codelineno-22-24" name="__codelineno-22-24"></a><span class="w">      </span>version:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-25" id="__codelineno-22-25" name="__codelineno-22-25"></a><span class="w">        </span>uuid:<span class="w"> </span>new<span class="w"> </span>UUID<span class="o">(</span><span class="s2">"9926816f-0ed8-428c-a170-cbd14b270c5e"</span><span class="o">)</span>,
+<a href="#__codelineno-22-26" id="__codelineno-22-26" name="__codelineno-22-26"></a><span class="w">        </span>timestamp:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1676379933</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">})</span>,
+<a href="#__codelineno-22-27" id="__codelineno-22-27" name="__codelineno-22-27"></a><span class="w">        </span>lastMod:<span class="w"> </span><span class="m">1</span>
+<a href="#__codelineno-22-28" id="__codelineno-22-28" name="__codelineno-22-28"></a><span class="w">      </span><span class="o">}</span>
+<a href="#__codelineno-22-29" id="__codelineno-22-29" name="__codelineno-22-29"></a><span class="w">    </span><span class="o">}</span>,
+<a href="#__codelineno-22-30" id="__codelineno-22-30" name="__codelineno-22-30"></a><span class="w">    </span>collections:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-31" id="__codelineno-22-31" name="__codelineno-22-31"></a><span class="w">      </span><span class="s1">'shardedDB.shardedCollection'</span>:<span class="w"> </span><span class="o">{</span>
+<a href="#__codelineno-22-32" id="__codelineno-22-32" name="__codelineno-22-32"></a><span class="w">        </span>shardKey:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span><span class="s1">'hashed'</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-33" id="__codelineno-22-33" name="__codelineno-22-33"></a><span class="w">        </span>unique:<span class="w"> </span>false,
+<a href="#__codelineno-22-34" id="__codelineno-22-34" name="__codelineno-22-34"></a><span class="w">        </span>balancing:<span class="w"> </span>true,
+<a href="#__codelineno-22-35" id="__codelineno-22-35" name="__codelineno-22-35"></a><span class="w">        </span>chunkMetadata:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-22-36" id="__codelineno-22-36" name="__codelineno-22-36"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>shard:<span class="w"> </span><span class="s1">'shard1'</span>,<span class="w"> </span>nChunks:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-37" id="__codelineno-22-37" name="__codelineno-22-37"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>shard:<span class="w"> </span><span class="s1">'shard2'</span>,<span class="w"> </span>nChunks:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">}</span>
+<a href="#__codelineno-22-38" id="__codelineno-22-38" name="__codelineno-22-38"></a><span class="w">        </span><span class="o">]</span>,
+<a href="#__codelineno-22-39" id="__codelineno-22-39" name="__codelineno-22-39"></a><span class="w">        </span>chunks:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-22-40" id="__codelineno-22-40" name="__codelineno-22-40"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>min:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>MinKey<span class="o">()</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span>max:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-4611686018427387902"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span><span class="s1">'on shard'</span>:<span class="w"> </span><span class="s1">'shard1'</span>,<span class="w"> </span><span class="s1">'last modified'</span>:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">})</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-41" id="__codelineno-22-41" name="__codelineno-22-41"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>min:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"-4611686018427387902"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span>max:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span><span class="s1">'on shard'</span>:<span class="w"> </span><span class="s1">'shard1'</span>,<span class="w"> </span><span class="s1">'last modified'</span>:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">})</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-42" id="__codelineno-22-42" name="__codelineno-22-42"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>min:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"0"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span>max:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"4611686018427387902"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span><span class="s1">'on shard'</span>:<span class="w"> </span><span class="s1">'shard2'</span>,<span class="w"> </span><span class="s1">'last modified'</span>:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">})</span><span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-22-43" id="__codelineno-22-43" name="__codelineno-22-43"></a><span class="w">          </span><span class="o">{</span><span class="w"> </span>min:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>Long<span class="o">(</span><span class="s2">"4611686018427387902"</span><span class="o">)</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span>max:<span class="w"> </span><span class="o">{</span><span class="w"> </span>_id:<span class="w"> </span>MaxKey<span class="o">()</span><span class="w"> </span><span class="o">}</span>,<span class="w"> </span><span class="s1">'on shard'</span>:<span class="w"> </span><span class="s1">'shard2'</span>,<span class="w"> </span><span class="s1">'last modified'</span>:<span class="w"> </span>Timestamp<span class="o">({</span><span class="w"> </span>t:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>i:<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="o">})</span><span class="w"> </span><span class="o">}</span>
+<a href="#__codelineno-22-44" id="__codelineno-22-44" name="__codelineno-22-44"></a><span class="w">        </span><span class="o">]</span>,
+<a href="#__codelineno-22-45" id="__codelineno-22-45" name="__codelineno-22-45"></a><span class="w">        </span>tags:<span class="w"> </span><span class="o">[]</span>
+<a href="#__codelineno-22-46" id="__codelineno-22-46" name="__codelineno-22-46"></a><span class="w">      </span><span class="o">}</span>
+<a href="#__codelineno-22-47" id="__codelineno-22-47" name="__codelineno-22-47"></a><span class="w">    </span><span class="o">}</span>
+<a href="#__codelineno-22-48" id="__codelineno-22-48" name="__codelineno-22-48"></a><span class="w">  </span><span class="o">}</span>
+<a href="#__codelineno-22-49" id="__codelineno-22-49" name="__codelineno-22-49"></a><span class="o">]</span>
+</code></pre></div>
+<h4 id="base-de-datos-con-uno-de-los-campos-de-la-coleccion-fragmentado">Base de datos con uno de los campos de la colección fragmentado</h4>
+<p>Vamos a hacerlo con otra base de datos de ejemplo.</p>
+<p>Activamos la fragmentación para la base de datos <strong>populations</strong>.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a>sh.enableSharding<span class="o">(</span><span class="s2">"populations"</span><span class="o">)</span>
+</code></pre></div>
+<p>Creamos la colección <strong>cities</strong> con el campo <strong>country</strong> como su clave de fragmentación.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a>sh.shardCollection<span class="o">(</span><span class="s2">"populations.cities"</span>,<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"hashed"</span><span class="w"> </span><span class="o">})</span>
+</code></pre></div>
+<p>Ahora insertamos varios documentos a la colección cities.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a>use<span class="w"> </span>populations
+<a href="#__codelineno-25-2" id="__codelineno-25-2" name="__codelineno-25-2"></a>
+<a href="#__codelineno-25-3" id="__codelineno-25-3" name="__codelineno-25-3"></a>db.cities.insertMany<span class="o">([</span>
+<a href="#__codelineno-25-4" id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Seoul"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"South Korea"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">25</span>.674<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-5" id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Mumbai"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"India"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">19</span>.980<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-6" id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Lagos"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Nigeria"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Africa"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">13</span>.463<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-7" id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Beijing"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"China"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">19</span>.618<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-8" id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Shanghai"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"China"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">25</span>.582<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-9" id="__codelineno-25-9" name="__codelineno-25-9"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Osaka"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Japan"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">19</span>.281<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-10" id="__codelineno-25-10" name="__codelineno-25-10"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Cairo"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Egypt"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Africa"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">20</span>.076<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-11" id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Tokyo"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Japan"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">37</span>.400<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-12" id="__codelineno-25-12" name="__codelineno-25-12"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Karachi"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Pakistan"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">15</span>.400<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-13" id="__codelineno-25-13" name="__codelineno-25-13"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Dhaka"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Bangladesh"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">19</span>.578<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-14" id="__codelineno-25-14" name="__codelineno-25-14"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Rio de Janeiro"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Brazil"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"South America"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">13</span>.293<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-15" id="__codelineno-25-15" name="__codelineno-25-15"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"São Paulo"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Brazil"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"South America"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">21</span>.650<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-16" id="__codelineno-25-16" name="__codelineno-25-16"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Mexico City"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Mexico"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"North America"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">21</span>.581<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-17" id="__codelineno-25-17" name="__codelineno-25-17"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Delhi"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"India"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">28</span>.514<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-18" id="__codelineno-25-18" name="__codelineno-25-18"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Buenos Aires"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Argentina"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"South America"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">14</span>.967<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-19" id="__codelineno-25-19" name="__codelineno-25-19"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Kolkata"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"India"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">14</span>.681<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-20" id="__codelineno-25-20" name="__codelineno-25-20"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"New York"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"United States"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"North America"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">18</span>.819<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-21" id="__codelineno-25-21" name="__codelineno-25-21"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Manila"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Philippines"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">13</span>.482<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-22" id="__codelineno-25-22" name="__codelineno-25-22"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Chongqing"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"China"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Asia"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">14</span>.838<span class="w"> </span><span class="o">}</span>,
+<a href="#__codelineno-25-23" id="__codelineno-25-23" name="__codelineno-25-23"></a><span class="w">    </span><span class="o">{</span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Istanbul"</span>,<span class="w"> </span><span class="s2">"country"</span>:<span class="w"> </span><span class="s2">"Turkey"</span>,<span class="w"> </span><span class="s2">"continent"</span>:<span class="w"> </span><span class="s2">"Europe"</span>,<span class="w"> </span><span class="s2">"population"</span>:<span class="w"> </span><span class="m">14</span>.751<span class="w"> </span><span class="o">}</span>
+<a href="#__codelineno-25-24" id="__codelineno-25-24" name="__codelineno-25-24"></a><span class="w">    </span><span class="o">])</span>
+</code></pre></div>
+<p>Comprobamos la distribución de los fragmentos.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a>db.cities.getShardDistribution<span class="o">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a>Shard<span class="w"> </span>shard2<span class="w"> </span>at<span class="w"> </span>shard2/mongoshard21:27017,mongoshard22:27017,mongoshard23:27017
+<a href="#__codelineno-27-2" id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="o">{</span>
+<a href="#__codelineno-27-3" id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'943B'</span>,
+<a href="#__codelineno-27-4" id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">9</span>,
+<a href="#__codelineno-27-5" id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-27-6" id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="w">  </span><span class="s1">'estimated data per chunk'</span>:<span class="w"> </span><span class="s1">'471B'</span>,
+<a href="#__codelineno-27-7" id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="w">  </span><span class="s1">'estimated docs per chunk'</span>:<span class="w"> </span><span class="m">4</span>
+<a href="#__codelineno-27-8" id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="o">}</span>
+<a href="#__codelineno-27-9" id="__codelineno-27-9" name="__codelineno-27-9"></a>---
+<a href="#__codelineno-27-10" id="__codelineno-27-10" name="__codelineno-27-10"></a>Shard<span class="w"> </span>shard1<span class="w"> </span>at<span class="w"> </span>shard1/mongoshard11:27017,mongoshard12:27017,mongoshard13:27017
+<a href="#__codelineno-27-11" id="__codelineno-27-11" name="__codelineno-27-11"></a><span class="o">{</span>
+<a href="#__codelineno-27-12" id="__codelineno-27-12" name="__codelineno-27-12"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'1KiB'</span>,
+<a href="#__codelineno-27-13" id="__codelineno-27-13" name="__codelineno-27-13"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">11</span>,
+<a href="#__codelineno-27-14" id="__codelineno-27-14" name="__codelineno-27-14"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">2</span>,
+<a href="#__codelineno-27-15" id="__codelineno-27-15" name="__codelineno-27-15"></a><span class="w">  </span><span class="s1">'estimated data per chunk'</span>:<span class="w"> </span><span class="s1">'567B'</span>,
+<a href="#__codelineno-27-16" id="__codelineno-27-16" name="__codelineno-27-16"></a><span class="w">  </span><span class="s1">'estimated docs per chunk'</span>:<span class="w"> </span><span class="m">5</span>
+<a href="#__codelineno-27-17" id="__codelineno-27-17" name="__codelineno-27-17"></a><span class="o">}</span>
+<a href="#__codelineno-27-18" id="__codelineno-27-18" name="__codelineno-27-18"></a>---
+<a href="#__codelineno-27-19" id="__codelineno-27-19" name="__codelineno-27-19"></a>Totals
+<a href="#__codelineno-27-20" id="__codelineno-27-20" name="__codelineno-27-20"></a><span class="o">{</span>
+<a href="#__codelineno-27-21" id="__codelineno-27-21" name="__codelineno-27-21"></a><span class="w">  </span>data:<span class="w"> </span><span class="s1">'2KiB'</span>,
+<a href="#__codelineno-27-22" id="__codelineno-27-22" name="__codelineno-27-22"></a><span class="w">  </span>docs:<span class="w"> </span><span class="m">20</span>,
+<a href="#__codelineno-27-23" id="__codelineno-27-23" name="__codelineno-27-23"></a><span class="w">  </span>chunks:<span class="w"> </span><span class="m">4</span>,
+<a href="#__codelineno-27-24" id="__codelineno-27-24" name="__codelineno-27-24"></a><span class="w">  </span><span class="s1">'Shard shard2'</span>:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-27-25" id="__codelineno-27-25" name="__codelineno-27-25"></a><span class="w">    </span><span class="s1">'45.4 % data'</span>,
+<a href="#__codelineno-27-26" id="__codelineno-27-26" name="__codelineno-27-26"></a><span class="w">    </span><span class="s1">'45 % docs in cluster'</span>,
+<a href="#__codelineno-27-27" id="__codelineno-27-27" name="__codelineno-27-27"></a><span class="w">    </span><span class="s1">'104B avg obj size on shard'</span>
+<a href="#__codelineno-27-28" id="__codelineno-27-28" name="__codelineno-27-28"></a><span class="w">  </span><span class="o">]</span>,
+<a href="#__codelineno-27-29" id="__codelineno-27-29" name="__codelineno-27-29"></a><span class="w">  </span><span class="s1">'Shard shard1'</span>:<span class="w"> </span><span class="o">[</span>
+<a href="#__codelineno-27-30" id="__codelineno-27-30" name="__codelineno-27-30"></a><span class="w">    </span><span class="s1">'54.59 % data'</span>,
+<a href="#__codelineno-27-31" id="__codelineno-27-31" name="__codelineno-27-31"></a><span class="w">    </span><span class="s1">'55 % docs in cluster'</span>,
+<a href="#__codelineno-27-32" id="__codelineno-27-32" name="__codelineno-27-32"></a><span class="w">    </span><span class="s1">'103B avg obj size on shard'</span>
+<a href="#__codelineno-27-33" id="__codelineno-27-33" name="__codelineno-27-33"></a><span class="w">  </span><span class="o">]</span>
+<a href="#__codelineno-27-34" id="__codelineno-27-34" name="__codelineno-27-34"></a><span class="o">}</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Más info</p>
+<p>Para más información y aprender a configurar el Sharding (fragmentación) en MongoDB sin utilizar Docker se puede seguir el siguiente <a href="https://www.digitalocean.com/community/tutorials/how-to-use-sharding-in-mongodb">tutorial</a>.</p>
+</div>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tabs", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+<script src="../../../javascripts/asciinema-player.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
